@@ -16,12 +16,14 @@ package oxim.digital.thingssandbox.piano;
  * limitations under the License.
  */
 
+import android.support.annotation.FloatRange;
+
 import com.google.android.things.pio.PeripheralManagerService;
 import com.google.android.things.pio.Pwm;
 
 import java.io.IOException;
 
-public class Speaker implements AutoCloseable {
+public final class Speaker implements AutoCloseable {
 
     private static final double SQUARE_WAVE = 50.0;
 
